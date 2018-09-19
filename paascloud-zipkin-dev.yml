@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/paascloud_zipkin?characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://119.29.84.121:3306/paascloud_zipkin?characterEncoding=utf8&useSSL=false
     schema: classpath:/mysql.sql
   sleuth:
     enabled: false
@@ -13,8 +13,8 @@ zipkin:
   collector:
     rabbitmq:
       addresses: paascloud-mq-rabbit:5672
-      username: guest
-      password: guest
+      username: rabbitmq
+      password: rabbitmq
       queue: zipkin
   storage:
     type: mysql
